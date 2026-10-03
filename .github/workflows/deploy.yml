@@ -20,7 +20,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_STATIC_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: ru-central1
       AWS_EC2_METADATA_DISABLED: "true"
-      YC_BUCKET: vershina-23.ru
+      YC_BUCKET: vershina50.ru
       YC_ENDPOINT: https://storage.yandexcloud.net
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +33,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
+      - run: node scripts/check-release.mjs
       - name: Upload site
         run: >-
           aws s3 sync dist/ "s3://${YC_BUCKET}"

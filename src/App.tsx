@@ -11,6 +11,7 @@ import Faq from "./components/Faq";
 import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
 import FloatBar from "./components/FloatBar";
+import LocalSeo from "./components/LocalSeo";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Trust />
         <Rent />
         <Faq />
+        <LocalSeo />
         <FinalCta />
       </main>
       <Footer />

@@ -53,8 +53,8 @@ export const TARIFFS: Tariff[] = [
     id: "regular",
     n: "01",
     name: "Влажная уборка",
-    rate: 160,
-    minPrice: 6000,
+    rate: 240,
+    minPrice: 9000,
     tagline: "Дом снова дышит. Идеально для поддержания порядка раз в 1–2 недели.",
     duration: "2–4 часа",
     checklist: [
@@ -72,8 +72,8 @@ export const TARIFFS: Tariff[] = [
     id: "general",
     n: "02",
     name: "Генеральная уборка",
-    rate: 250,
-    minPrice: 9000,
+    rate: 375,
+    minPrice: 13500,
     tagline: "Квартира как в день покупки. Раз в 2–3 месяца или перед событием.",
     duration: "5–8 часов",
     checklist: [
@@ -93,8 +93,8 @@ export const TARIFFS: Tariff[] = [
     id: "after-renovation",
     n: "03",
     name: "После ремонта",
-    rate: 300,
-    minPrice: 12000,
+    rate: 450,
+    minPrice: 18000,
     tagline: "Чистый старт после строительных работ. Убираем пыль, следы смесей и мелкий мусор.",
     duration: "1–2 дня",
     checklist: [
@@ -112,10 +112,10 @@ export const TARIFFS: Tariff[] = [
     name: "Под ключ",
     rate: null,
     rateOptions: [
-      { id: "standard", name: "Стандартные окна", rate: 450 },
-      { id: "panoramic", name: "Панорамные окна", rate: 550 },
+      { id: "standard", name: "Стандартные окна", rate: 675 },
+      { id: "panoramic", name: "Панорамные окна", rate: 825 },
     ],
-    minPrice: 12000,
+    minPrice: 18000,
     tagline: "Максимум. Для новоселья, после ремонта или когда нужен вау-эффект.",
     duration: "1–2 дня",
     checklist: [
@@ -135,21 +135,21 @@ export const TARIFFS: Tariff[] = [
 export const CASES = [
   {
     title: "Генеральная уборка",
-    place: "ЖК «Курортный проспект», 94 м²",
+    place: "Городская квартира, 94 м²",
     facts: ["7 часов", "3 специалиста", "приёмка с первого раза"],
-    before: "/images/case1-before.jpg",
-    after: "/images/case1-after.jpg",
+    before: "/images/case1-before-balashikha.webp",
+    after: "/images/case1-after-balashikha.webp",
   },
   {
     title: "После ремонта",
-    place: "Мамайка, 61 м²",
+    place: "Квартира после ремонта, 61 м²",
     facts: ["2 дня", "4 специалиста", "вывоз строительной пыли"],
-    before: "/images/case2-before.jpg",
-    after: "/images/case2-after.jpg",
+    before: "/images/case2-before-balashikha.webp",
+    after: "/images/case2-after-balashikha.webp",
   },
   {
     title: "Дом под ключ",
-    place: "Красная Поляна, 180 м²",
+    place: "Загородный дом, 180 м²",
     facts: ["2 дня", "5 специалистов", "окна + ароматизация"],
     before: "/images/case3-before.jpg",
     after: "/images/case3-after.jpg",
@@ -173,7 +173,7 @@ export const TRUST = [
 export const FAQ = [
   {
     q: "Сколько это стоит на самом деле?",
-    a: "Ровно столько, сколько показал калькулятор: ставка × площадь. Цена фиксируется до приезда и не меняется на месте. Если объект сильно запущен — предупредим заранее, а не поставим перед фактом.",
+    a: "Калькулятор считает ставку × площадь, но не ниже минимального заказа. Расчёт начинается с 25 м²; для уборки под ключ ставка зависит от типа окон. Стоимость и состав работ подтверждаем до приезда. Если объект сильно запущен — предупредим заранее, а не поставим перед фактом.",
   },
   {
     q: "Мне нужно быть дома во время уборки?",
