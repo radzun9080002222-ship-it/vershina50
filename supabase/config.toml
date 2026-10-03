@@ -1,0 +1,5 @@
+project_id = "apuajxotemukpjheppaz"
+
+[functions.cleaning-stats]
+# GET publishes only cached aggregate; POST requires a hashed, Vault-held refresh token.
+verify_jwt = false
