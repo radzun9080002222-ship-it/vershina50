@@ -24,7 +24,8 @@
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=113372865','ym');
 ym(113372865,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';var g=h.startsWith('tel:')?'click_phone':h.includes('wa.me/')?'click_whatsapp':h.includes('t.me/')?'click_telegram':h.includes('max.ru/')?'click_max':h==='#calc'?'calc_open':null;if(g)ym(113372865,'reachGoal',g);});
-document.addEventListener('change',function(e){if(e.target.id==='area')ym(113372865,'reachGoal','calc_interaction');});
+      document.addEventListener('change',function(e){if(e.target.id==='area')ym(113372865,'reachGoal','calc_interaction');});
+      document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#calc button'))ym(113372865,'reachGoal','calc_interaction');});
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
