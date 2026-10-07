@@ -151,8 +151,8 @@ export const CASES = [
     title: "Дом под ключ",
     place: "Загородный дом, 180 м²",
     facts: ["2 дня", "5 специалистов", "окна + ароматизация"],
-    before: "/images/case3-before.jpg",
-    after: "/images/case3-after.jpg",
+    before: "/images/case3-before.webp",
+    after: "/images/case3-after.webp",
   },
 ];
 
