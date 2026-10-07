@@ -5,7 +5,7 @@ export default function Trust() {
     <section className="bg-white pb-20 md:pb-28">
       <div className="container-x grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
         <div className="relative">
-          <img src="/images/team.jpg" alt="Команда «Вершины» в форме" className="aspect-[4/3] w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
+          <img src="/images/team.webp" alt="Команда «Вершины» в форме" className="aspect-[4/3] w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
         </div>
         <div>
           <div className="kicker">Почему нам оставляют ключи</div>

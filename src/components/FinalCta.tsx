@@ -5,7 +5,7 @@ export default function FinalCta() {
   return (
     <section className="relative overflow-hidden bg-mist py-24 md:py-32">
       <img
-        src="/images/mountain-relief.jpg"
+        src="/images/mountain-relief.webp"
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute bottom-0 right-0 h-full opacity-80"
