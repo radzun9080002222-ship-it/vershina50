@@ -13,7 +13,7 @@ assert(html.includes('Балашихе'));
 const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 assert.equal(schema.name,'Вершина — клининг в Балашихе');
 assert.equal(schema.priceRange,'от 6000 ₽');
-assert.deepEqual(schema.hasOfferCatalog.itemListElement.map(o => Number(o.priceSpecification.price)),[190,300,360,480,590,540,660]);
+assert.deepEqual(schema.hasOfferCatalog.itemListElement.map(o => Number(o.priceSpecification.price)),[190,300,480,590,360,540,660]);
 for (const match of html.matchAll(/(?:src|href)="(\/(?:images|assets)\/[^"?#]+)"/g)) assert(fs.existsSync('dist'+match[1]),'Missing '+match[1]);
 for (const f of ['favicon.ico','favicon-120x120.png','favicon-16x16.png','favicon-32x32.png','favicon-48x48.png','apple-touch-icon.png','site.webmanifest','robots.txt','sitemap.xml','privacy.html']) assert(fs.existsSync('dist/'+f),'Missing '+f);
 assert.equal(fs.readFileSync('public/CNAME','utf8').trim(),'vershina50.ru');
