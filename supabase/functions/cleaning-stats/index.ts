@@ -63,7 +63,9 @@ async function refresh() {
   return snapshot;
 }
 if (typeof Deno !== 'undefined') Deno.serve(async request => {
-  const headers = { 'content-type': 'application/json', 'access-control-allow-origin': 'https://vershina50.ru', 'access-control-allow-methods': 'GET, OPTIONS', 'cache-control': 'no-store' };
+  // This anonymous GET exposes only the existing four-field public aggregate.
+  // No credentials, raw events or client details; protected POST is unchanged.
+  const headers = { 'content-type': 'application/json', 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, OPTIONS', 'cache-control': 'no-store' };
   const reply = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers });
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
   try {
